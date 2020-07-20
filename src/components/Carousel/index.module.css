@@ -1,0 +1,59 @@
+.arrow {
+  background: url('./leftArrow.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  height: 0;
+  padding-bottom: 43%;
+  width: var(--arrow-width);
+}
+.arrow:hover {
+  cursor: pointer;
+}
+.arrow:focus {
+  border: 0;
+  outline: 0;
+}
+.arrowRight {
+  transform: rotate(180deg);
+  right: 0;
+}
+
+.arrowDisabled {
+  opacity: .3;
+}
+
+.wrapper {
+  /*margin: calc(10 * var(--grid)) calc(7 * var(--grid));*/
+  margin-bottom: 15vw;
+  position: relative;
+}
+.wrapper h2 {
+  max-width: 80%;;
+  margin: 0px auto;
+}
+
+.wrapper h3 {
+  margin: 96px auto;
+  max-width: 80%;
+}
+/*
+.wrapper :global(.BrainhubCarousel__customArrows) {
+  position: absolute;
+}
+
+.wrapper :global(.BrainhubCarousel__custom-arrowRight) {
+  right: 0;
+}
+*/
+
+.wrapper :global(.BrainhubCarousel__dots .BrainhubCarousel__dot) {
+  background: transparent;
+  padding: 0 var(--pip-spacing); 
+  opacity: 0.4;
+}
+.wrapper :global(.BrainhubCarousel__dots .BrainhubCarousel__dot:before) {
+  height: var(--pip-size);
+  width: var(--pip-size);
+}
