@@ -16,7 +16,6 @@ const Carousel = ({
   return (
     <div className={wrapper}>
       <Slider
-        addArrowClickHandler
         arrows
         dots
         dotsClass={dots}

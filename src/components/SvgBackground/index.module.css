@@ -1,0 +1,25 @@
+.image {
+  display: block;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width: auto;
+  transform: translateX(50%);
+}
+.imageLeft {
+  left: 0;
+  right: auto;
+  transform: translateX(-50%);
+}
+.wrapper {
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.wrapperRight {
+  background-position: 100% 50%;
+}
