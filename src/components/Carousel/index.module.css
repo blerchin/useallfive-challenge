@@ -1,59 +1,41 @@
-.arrow {
-  background: url('./leftArrow.svg');
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 0;
-  height: 0;
-  padding-bottom: 43%;
-  width: var(--arrow-width);
-}
-.arrow:hover {
-  cursor: pointer;
-}
-.arrow:focus {
-  border: 0;
-  outline: 0;
-}
-.arrowRight {
-  transform: rotate(180deg);
-  right: 0;
+.dots {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.arrowDisabled {
-  opacity: .3;
+.dots li {
+  display: inline-block;
+  margin: var(--pip-spacing);
+}
+.dots li button {
+  border: 0;
+  border-radius: 50%;
+  background-color: #000;
+  font-size: 0;
+  height: var(--pip-size);
+  opacity: 0.4;
+  padding: 0;
+  width: var(--pip-size);
+}
+.dots :global(li.slick-active button) {
+  opacity: 1;
+}
+.dots li button:focus,
+.dots li button:hover,
+.dots li button:active {
+  cursor: pointer;
+  outline: 0;
 }
 
 .wrapper {
-  /*margin: calc(10 * var(--grid)) calc(7 * var(--grid));*/
-  margin-bottom: 15vw;
+  margin-bottom: 10vw;
   position: relative;
 }
-.wrapper h2 {
-  max-width: 80%;;
-  margin: 0px auto;
-}
 
-.wrapper h3 {
-  margin: 96px auto;
-  max-width: 80%;
-}
-/*
-.wrapper :global(.BrainhubCarousel__customArrows) {
-  position: absolute;
-}
-
-.wrapper :global(.BrainhubCarousel__custom-arrowRight) {
-  right: 0;
-}
-*/
-
-.wrapper :global(.BrainhubCarousel__dots .BrainhubCarousel__dot) {
-  background: transparent;
-  padding: 0 var(--pip-spacing); 
-  opacity: 0.4;
-}
-.wrapper :global(.BrainhubCarousel__dots .BrainhubCarousel__dot:before) {
-  height: var(--pip-size);
-  width: var(--pip-size);
+.wrapper :global(.slick-track) {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }

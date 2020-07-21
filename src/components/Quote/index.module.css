@@ -1,0 +1,12 @@
+.wrapper {
+  margin: calc(10 * var(--grid)) 15%;
+  outline: none;
+}
+
+.wrapper h2 {
+  margin: 0px auto;
+}
+
+.wrapper h3 {
+  margin: 96px auto;
+}

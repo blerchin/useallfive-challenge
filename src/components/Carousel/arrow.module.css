@@ -1,0 +1,35 @@
+.arrow {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  margin: 0px var(--arrow-width);
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  width: var(--arrow-width);
+  z-index: 1;
+}
+.arrow button {
+  background: url('./leftArrow.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  height: 0;
+  outline: 0;
+  padding-bottom: 43%;
+  width: 100%;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+.arrow:focus {
+  border: 0;
+  outline: 0;
+}
+.arrowRight {
+  transform: rotate(180deg);
+  right: 0;
+}

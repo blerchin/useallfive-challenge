@@ -1,6 +1,8 @@
 [
   {
     "section_title": "Congratulatory Messages",
+    "primary": true,
+    "backgroundPosition": "right",
     "quotes": [
       {
         "message": "...please live the beautiful life that you have. It will always be enough...",
@@ -22,6 +24,8 @@
   },
   {
     "section_title": "More Messages!",
+    "backgroundPosition": "left",
+    "textColor": "#0E4EF3",
     "quotes": [
       {
         "message": "Creativity is not part of the solution, it IS the solution. Reimagine, reinvent, insist on dignity, and save the world.",

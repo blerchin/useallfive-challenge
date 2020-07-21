@@ -1,62 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import ReactCarousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+import Slider from 'react-slick';
 
-import { arrow, arrowDisabled, arrowRight, dot, wrapper } from './index.module.css';
+import Arrow from './Arrow';
+import Quote from '../Quote';
 
-const Arrow = ({
-  right = false,
-  disabled = false
-}) => (
-  <button className={`${arrow} ${right ? arrowRight : ''} ${disabled ? arrowDisabled : ''}`} />
-);
+import "slick-carousel/slick/slick.css";
 
-const Dot = ({
-}) => (
-  <button className={dot} />
-);
+import { dots, wrapper } from './index.module.css';
 
 const Carousel = ({
-  logoPosition = 'right',
   quotes,
-  title
+  textColor
 }) => {
   return (
     <div className={wrapper}>
-      <h5>{ title }</h5>
-      <ReactCarousel
+      <Slider
         addArrowClickHandler
         arrows
-        arrowLeft={<Arrow />}
-        arrowLeftDisabled={<Arrow disabled />}
-        arrowRight={<Arrow right />}
-        arrowRightDisabled={<Arrow disabled right />}
         dots
+        dotsClass={dots}
         infinite
+        nextArrow={<Arrow next />}
+        prevArrow={<Arrow />}
         >
-        {quotes.map(({ message, attribution }, i) => (
-          <div key={i}>
-            <h2>
-              { message }
-            </h2>
-            <h3>
-              { attribution.split('\n').map((line) => [
-                <span key='span'>{line}</span>, 
-                <br key='break' />
-              ])}
-            </h3>
-          </div>
+        {quotes.map((item, i) => (
+          <Quote key={i} textColor={textColor} {...item} />
         ))}
-      </ReactCarousel>
+      </Slider>
     </div>
   );
 };
 
 Carousel.propTypes = {
-  logoPosition: PropTypes.string,
   quotes: PropTypes.array,
-  title: PropTypes.string
 };
 
 export default Carousel
