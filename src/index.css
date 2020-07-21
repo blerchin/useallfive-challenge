@@ -1,24 +1,30 @@
+@import "typography.css";
+
 body {
   margin: 0;
-  font-family: 'Times New Roman', 'Times', serif;
+  font-family: var(--font-times);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* mobile vars */
+/* responsive sizes */
 :root {
-  /* responsive breakpoints */
+  --font-times: 'Times New Roman', 'Times', serif;
   --h2-font-size: 5vw;
   --h3-font-size: 3.88vw;
   --grid: 8px;
   --arrow-width: 4vw;
   --pip-size: 6px;
   --pip-spacing: 5px;
+  --separator: 32px;
+  --divider-width: 24px;
 }
 @media screen and (min-width: 768px) {
   :root {
     --pip-size: 1.1vw;
     --pip-spacing: 1vw;
+    --separator: 8vw;
+    --divider-width: 6vw;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -28,7 +34,8 @@ body {
     --arrow-width: 56px;
     --pip-size: 16px;
     --pip-spacing: 12px;
+    --separator: 96px;
+    --divider-width: 84px;
   }
 }
-
 

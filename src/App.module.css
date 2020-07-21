@@ -1,0 +1,10 @@
+.segment {
+  margin: var(--separator) 0;
+  margin-bottom: calc(3 * var(--separator));
+  position: relative;
+  overflow: hidden;
+}
+
+.segmentPrimary h5 {
+  font-weight: bold;
+}

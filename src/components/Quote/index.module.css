@@ -1,5 +1,5 @@
 .wrapper {
-  margin: calc(10 * var(--grid)) 15%;
+  margin: var(--separator) 15%;
   outline: none;
 }
 
@@ -7,6 +7,11 @@
   margin: 0px auto;
 }
 
-.wrapper h3 {
-  margin: 96px auto;
+.wrapper h3:before {
+  border-top: 1px solid #000;
+  content: '';
+  display: block;
+  margin: var(--separator) auto;
+  height: 0;
+  width: var(--divider-width);
 }

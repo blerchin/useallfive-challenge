@@ -19,7 +19,19 @@ h3 {
 h5 {
   font-size: 21px;
   line-height: 190%;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.02em;
 }
+
+.ctaText {
+  font-family: var(--font-times);
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+

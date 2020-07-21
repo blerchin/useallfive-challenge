@@ -6,10 +6,10 @@ import { wrapper } from './index.module.css';
 const Quote = ({
   attribution,
   message,
-  textColor
+  textColor = 'inherit'
 }) => (
   <div className={wrapper}>
-    <h2 style={{ color: textColor || "inherit" }}>
+    <h2 style={{ color: textColor }}>
       { message }
     </h2>
     <h3>
