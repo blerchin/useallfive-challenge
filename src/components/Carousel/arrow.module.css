@@ -4,7 +4,7 @@
   border: 0;
   left: 0;
   margin: 0px var(--arrow-width);
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

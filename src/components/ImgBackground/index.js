@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { image, imageLeft, wrapper } from './index.module.css';
 
-const SvgBackground = ({
+const ImgBackground = ({
   position = 'left',
   src
 }) => (
@@ -12,9 +12,9 @@ const SvgBackground = ({
   </div>
 );
 
-SvgBackground.propTypes = {
+ImgBackground.propTypes = {
   position: PropTypes.string,
   src: PropTypes.string
 };
 
-export default SvgBackground;
+export default ImgBackground;
