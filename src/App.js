@@ -1,14 +1,13 @@
 import React from 'react';
 
 import Carousel from './components/Carousel';
+import CtaButton from './components/CtaButton';
+import SvgBackground from './components/SvgBackground';
 
 import carouselData from './assets/data.json';
 import asterisk from './assets/asterisk.svg';
 
-import SvgBackground from './components/SvgBackground';
-
 import { segment, segmentPrimary } from './App.module.css';
-import CtaButton from './components/CtaButton';
 
 function App() {
   return (

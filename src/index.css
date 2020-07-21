@@ -12,7 +12,7 @@ body {
   --font-times: 'Times New Roman', 'Times', serif;
   --h2-font-size: 5vw;
   --h3-font-size: 3.88vw;
-  --h5-font-size: 2.8vw;
+  --h5-font-size: 12px;
   --cta-font-size: 2.8vw;
   --cta-v-padding: 3vw;
   --grid: 8px;
@@ -24,6 +24,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   :root {
+    --h5-font-size: 1.75vw;
     --pip-size: 1.1vw;
     --pip-spacing: 1vw;
     --separator: 8vw;
